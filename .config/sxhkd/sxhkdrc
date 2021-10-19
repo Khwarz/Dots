@@ -122,3 +122,12 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+# printscreen selected area
+shift + Print
+    maim -us -c 255,255,255,0.1 -l /tmp/screenshot.png; cat /tmp/screenshot.png | xclip -selection clipboard -t image/png; cp /tmp/screenshot.png $HOME/Pictures/Screenshots/(date +%s).png && dunstify --replace 554 "maim" "Screenshot copied to clipboard"
+
+# printscreen entire screen
+control + Print
+    maim -u /tmp/screenshot.png; cat /tmp/screenshot.png | xclip -selection clipboard -t image/png; cp /tmp/screenshot.png $HOME/Pictures/Screenshots/(date +%s).png | dunstify --replace 554 "maim" "Screenshot copied to clipboard"
