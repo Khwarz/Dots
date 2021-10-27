@@ -9,10 +9,10 @@ nitrogen --restore
 $HOME/.config/polybar/launch.sh
 
 #Dunst
-# dunst &
+#dunst &
  
 #Picom 
-picom &
+#picom &
 
 #sxhkd 
 sxhkd &
