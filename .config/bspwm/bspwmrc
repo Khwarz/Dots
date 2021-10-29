@@ -5,6 +5,9 @@ normal=$(xrdb ~/.Xresrouces -query all | grep background | cut -f2 | head -n 1)
 #Nitrogen
 nitrogen --restore 
 
+#set compose key
+setxkbmap -option "compose:ralt"
+
 #Polybar 
 $HOME/.config/polybar/launch.sh
 

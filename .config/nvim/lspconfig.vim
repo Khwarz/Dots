@@ -67,7 +67,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = {'rust_analyzer', 'intelephense', 'vuels', 'tsserver', 'pylsp'}
+local servers = {'rust_analyzer', 'intelephense', 'vuels', 'tsserver', 'pylsp', 'elixirls', 'rust_analyzer'}
 nvim_lsp.html.setup{
     filetypes = { "html", "blade", "css" }
 }
