@@ -126,8 +126,8 @@ super + {Left,Down,Up,Right}
 
 # printscreen selected area
 shift + Print
-    maim -us -c 255,255,255,0.1 -l /tmp/screenshot.png; cat /tmp/screenshot.png | xclip -selection clipboard -t image/png; cp /tmp/screenshot.png $HOME/Pictures/Screenshots/(date +%s).png && dunstify --replace 554 "maim" "Screenshot copied to clipboard"
+    maim -us -c 255,255,255,0.1 -l /tmp/screenshot.png; cat /tmp/screenshot.png | xclip -selection clipboard -t image/png; cp /tmp/screenshot.png $HOME/Pictures/Screenshots/Screenshot_$(date +%s).png 
 
 # printscreen entire screen
 control + Print
-    maim -u /tmp/screenshot.png; cat /tmp/screenshot.png | xclip -selection clipboard -t image/png; cp /tmp/screenshot.png $HOME/Pictures/Screenshots/(date +%s).png | dunstify --replace 554 "maim" "Screenshot copied to clipboard"
+    maim -u /tmp/screenshot.png; cat /tmp/screenshot.png | xclip -selection clipboard -t image/png; cp /tmp/screenshot.png $HOME/Pictures/Screenshots/Screenshot_$(date +%s).png

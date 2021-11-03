@@ -16,7 +16,8 @@ endif
 let g:sonokai_style = 'shusia'
 let g:sonokai_enable_italic = 1
 
-colorscheme onedark
+"Colorscheme
+colorscheme moonfly
 
 "Blade specific configuration
 autocmd BufRead,BufNewFile *.blade.php set filetype=blade
