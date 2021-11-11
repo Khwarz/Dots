@@ -103,3 +103,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+export _JAVA_AWT_WM_NONREPARENTING=1
