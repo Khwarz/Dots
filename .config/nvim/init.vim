@@ -1,6 +1,5 @@
 runtime ./plug.vim
 runtime ./lspconfig.vim
-runtime ./neoformat.vim
 runtime ./lspsaga.vim
 runtime ./treesitter.vim
 runtime ./completion.vim

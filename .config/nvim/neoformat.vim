@@ -7,11 +7,11 @@ autocmd BufWritePre *.tsx Neoformat
 
 augroup formatting
     autocmd!
-    autocmd FileType markdown setlocal formatprg=prettier\ --parser\ markdown --bracket-same-line\ true
-    autocmd FileType css setlocal formatprg=prettier\ --parser\ css\ --bracket-same-line\ true
-    autocmd FileType html setlocal formatprg=prettier\ --parser\ html\ --bracket-same-line\ true
-    autocmd FileType json setlocal formatprg=prettier\ --parser\ json\ --bracket-same-line\ true
-    autocmd FileType blade setlocal formatprg=prettier\ --parser\ html\ --bracket-same-line\ true
+    autocmd FileType markdown setlocal formatprg=prettier\ --parser\ markdown
+    autocmd FileType css setlocal formatprg=vscode-css-language-server\ --stdio
+    autocmd FileType html setlocal formatprg=vscode-html-language-server\ --stdio
+    autocmd FileType json setlocal formatprg=vscode-json-language-server\ --stdio
+    autocmd FileType blade setlocal formatprg=vscode-html-language-server\ --stdio
     autocmd FileType javascript setlocal formatprg=prettier\ --trailing-comma\ es5
     autocmd FileType vue setlocal formatprg=prettier\ --trailing-comma\ es5
 augroup END
