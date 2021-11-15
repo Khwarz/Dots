@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$PATH
 export PATH=$HOME/.local/bin/elixir-ls:$PATH
+export PATH="$PATH:/usr/lib/dart/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/emmanuel/.oh-my-zsh"
